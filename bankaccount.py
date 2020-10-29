@@ -5,16 +5,16 @@ class BankAccount:
         self.routing_number = routing_number
         self.balance = balance
 
-    def deposit(amount):
+    def deposit(self,amount):
         self.balance = amount + self.balance
         print(f'Amount Deposited: ${amount}') 
 
-    def widthdraw(amount):
+    def widthdraw(self,amount):
         return balance - amount
         balance = balance - amount
         print(f'Amount Deposited: ${amount}')
 
-    def get_balance():
+    def get_balance(self):
         print(f'Hello, {full_name}')
         printf(f'Your balance is {balance}')
 

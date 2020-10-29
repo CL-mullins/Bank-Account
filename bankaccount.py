@@ -6,7 +6,7 @@ class BankAccount:
         self.balance = balance
 
     def deposit(amount):
-        balance = amount + balance
+        self.balance = amount + self.balance
         print(f'Amount Deposited: ${amount}') 
 
     def widthdraw(amount):
@@ -28,4 +28,4 @@ class BankAccount:
 SamJohnson = BankAccount('Sam Johnson', 82712391, 38914091, 500.00)
 print("Hello, I'm Banksy, your personal banking assistant!")
 
-SamJohnson.deposit()
+SamJohnson.deposit(6)

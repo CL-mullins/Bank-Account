@@ -33,17 +33,17 @@ class BankAccount:
         print('              ')
         print(self.full_name)
         #how do you change the characters in a string
-        self.account_number = self.account_number.replace("4","*")
-        print(f'Account number: {self.account_number}')
+        censor = "****"
+        print(f'Account number: {censor + self.account_number[4:9]}')
         print(f'Routing number: {self.routing_number}')
         print(f'Balance: ${round(self.balance,2)}')
 
 
 
-SamJohnson = BankAccount('Sam Johnson', '44442391', 38914091, 500.00)
-RickJameson = BankAccount('Rick Jameson', '44449381',38914091,250)
-JaneDoe = BankAccount('Jane Doe', '44441238',38914091, 1000)
-JohnDoe = BankAccount('John Doe','44446220', 38914091, 25)
+SamJohnson = BankAccount('Sam Johnson', '31232391', 38914091, 500.00)
+RickJameson = BankAccount('Rick Jameson', '41929381',38914091,250)
+JaneDoe = BankAccount('Jane Doe', '12391238',38914091, 1000)
+JohnDoe = BankAccount('John Doe','31906220', 38914091, 25)
 
 print('             ')
 print("Hello, I'm Banksy, your personal banking assistant!")

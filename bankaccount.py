@@ -32,7 +32,6 @@ class BankAccount:
     def print_receipt(self):
         print('              ')
         print(self.full_name)
-        #how do you change the characters in a string
         censor = "****"
         print(f'Account number: {censor + self.account_number[4:9]}')
         print(f'Routing number: {self.routing_number}')
@@ -47,7 +46,7 @@ JohnDoe = BankAccount('John Doe','31906220', 38914091, 25)
 
 print('             ')
 print("Hello, I'm Banksy, your personal banking assistant!")
-print('Please enter')
+print('     ')
 
 SamJohnson.get_balance()
 SamJohnson.deposit(6.53)
@@ -55,4 +54,11 @@ SamJohnson.widthdraw(600)
 SamJohnson.add_interest()
 SamJohnson.get_balance()
 
+print('    ')
 SamJohnson.print_receipt()
+
+RickJameson.print_receipt()
+
+JaneDoe.print_receipt()
+
+JohnDoe.print_receipt()

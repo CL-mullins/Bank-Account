@@ -1,3 +1,6 @@
+Bank Account by Christopher Mullins
+Language used: Python3
+
 Creating a Bank Account for my CS 1.1 Assignment
 
 **IMPORTANT**
@@ -10,7 +13,7 @@ print_reciept(): Prints the current reciept of the user's bank account that spec
 
 
 
-ASSIGNMENT REQUIREMENTS
+**ASSIGNMENT REQUIREMENTS**
 This bank account should all a user to do the following:
 
 Your Python program should be created in one file called BankAccount.py.

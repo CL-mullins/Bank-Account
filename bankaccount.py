@@ -1,11 +1,19 @@
+import random
+import string
+
+def get_random_string(length):
+    digits = string.digits
+    result_str = ''.join((random.choice(digits) for i in range(length)))
+    return result_str
+
 class BankAccount:
     #Creates a bank account class with 5 methods for various functions defined below
     def __init__(self, full_name, account_number, routing_number, balance):
         #Initializes the bank account class with the user's name, randomized account number, and balance.
         self.full_name = full_name
         self.account_number = account_number
-        self.routing_number = routing_number
-        self.balance = balance
+        self.routing_number = 38914091
+        self.balance = 0
     
 
     def deposit(self,amount):
@@ -50,10 +58,10 @@ class BankAccount:
 
 
 #Initialization of various different accounts
-SamJohnson = BankAccount('Sam Johnson', '31232391', 38914091, 500.00)
-RickJameson = BankAccount('Rick Jameson', '41929381',38914091,250)
-JaneDoe = BankAccount('Jane Doe', '12391238',38914091, 1000)
-JohnDoe = BankAccount('John Doe','31906220', 38914091, 25)
+SamJohnson = BankAccount('Sam Johnson', get_random_string(8), 38914091, 500.00)
+RickJameson = BankAccount('Rick Jameson', get_random_string(8),38914091,250)
+JaneDoe = BankAccount('Jane Doe', get_random_string(8),38914091, 1000)
+JohnDoe = BankAccount('John Doe', get_random_string(8), 38914091, 25)
 
 #Chatbot functionality
 print('             ')
@@ -67,7 +75,7 @@ SamJohnson.get_balance()
 SamJohnson.deposit(6.53)
 
 #Example of the withdraw function
-SamJohnson.widthdraw(600)
+SamJohnson.widthdraw(8.00)
 
 #Example of adding interest
 SamJohnson.add_interest()
